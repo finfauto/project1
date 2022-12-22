@@ -29,7 +29,7 @@ testdata_race_points = [
 
 
 @pytest.mark.parametrize("position, expected_points", testdata_race_points)
-def test_get_race_points(position: str, expected_points: int):
+def test_get_race_points_with_fastest_lap(position: str, expected_points: int):
     assert get_race_points_from_position(position) == expected_points
 
 
